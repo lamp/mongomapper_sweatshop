@@ -1,9 +1,6 @@
 module MongoSweatShop
   module Model
     
-    def woo
-    end
-    
     module ClassMethods
     
       @@fixtures = {}
