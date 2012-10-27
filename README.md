@@ -9,17 +9,17 @@ MongoMapper Sweatshop, Extracted from @goalsforgiving
 
 
 #### Installation: (Gemfile)
-   gem "mongo-sweatshop"
+    gem "mongo-sweatshop"
 
 
 ####Usage:
 
-   User.fix {
-     {
-       #randexp is included for you
-       name: /\w+/.gen,
-       email: /\w@\w\.com/.gen
-     }
-   }
+    User.fix {
+      {
+        #randexp is included for you
+        name: /\w+/.gen,
+        email: /\w@\w\.com/.gen
+      }
+    }
 
 
