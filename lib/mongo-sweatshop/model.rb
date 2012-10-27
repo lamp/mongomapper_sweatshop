@@ -5,12 +5,12 @@ module MongoSweatShop
     
       @@fixtures = {}
       def fix name=:default, &block
-        @@fixtures[name] = block.call
+        @@fixtures[name] = block
       end
       alias :fixture :fix
       
       def gen name=:default, overrides={}  
-        self.create @@fixtures[name].merge(overrides)
+        self.create @@fixtures[name].call.merge(overrides)
       end
       alias :generate :gen
       

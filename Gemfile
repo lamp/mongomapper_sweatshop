@@ -6,6 +6,6 @@ gem 'randexp'
 
 group :development do
   gem 'rspec'
-  gem 'rspec-expectations'
+  gem 'simplecov'
   gem 'yard'
 end
