@@ -1,8 +1,7 @@
 MongoMapper Sweatshop, Extracted from @goalsforgiving
 ====================================================
 
-datamapper/dm-sweatshop:dm-sweatshop
-shamelessly rewritten for mongo_mapper 
+User/Project:datamapper/dm-sweatshop shamelessly rewritten for mongo_mapper 
 
 ###Requirements
 
