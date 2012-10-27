@@ -1,6 +1,8 @@
 MongoMapper Sweatshop, Extracted from @goalsforgiving
 ====================================================
 
+datamapper/dm-sweatshop:dm-sweatshop
+shamelessly rewritten for mongo_mapper 
 
 ###Requirements
 
@@ -22,4 +24,10 @@ MongoMapper Sweatshop, Extracted from @goalsforgiving
       }
     }
 
+    # create a user (#create)
+    User.gen
+    
+    # make a user (#new)
+    User.make
+    
 
