@@ -68,5 +68,9 @@ describe MongoSweatShop::SweatShop do
         subject[User, :default]
       end.to_not raise_error
     end
+    
+    specify do
+      subject[User, :default].should eq(callable.call)
+    end
   end
 end
