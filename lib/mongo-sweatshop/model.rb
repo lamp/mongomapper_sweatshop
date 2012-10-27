@@ -1,5 +1,4 @@
 module MMSweatShop
-  extend ActiveSupport::Concern
   
   module ClassMethods
     
@@ -18,4 +17,3 @@ module MMSweatShop
   end
   
 end
-MongoMapper::Document.plugin(MMSweatShop)
