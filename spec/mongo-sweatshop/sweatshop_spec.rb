@@ -1,7 +1,7 @@
 require 'spec_helper'
 describe MongoSweatShop::SweatShop do
   
-  before :each do
+  before :all do
     class User; end
   end
   
@@ -46,11 +46,6 @@ describe MongoSweatShop::SweatShop do
         end.to_not raise_error
       end
     end
-    
-    context "corect storage" do
-      
-    end
-    
   end
   
   context "getting a fixture" do

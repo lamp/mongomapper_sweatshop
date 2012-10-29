@@ -31,8 +31,6 @@ module MongoSweatShop
       rescue NoFixtureError
         puts "A fixture with that name has been generated, we have used the default"
         @@models[klass][:default].last.call.merge(overrides)
-      else
-        false
       end
     end
   end
