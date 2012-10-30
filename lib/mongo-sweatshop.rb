@@ -1,5 +1,5 @@
-require 'mongo-sweatshop/sweatshop'
-require 'mongo-sweatshop/model'
+require File.dirname(__FILE__) + '/mongo-sweatshop/sweatshop'
+require File.dirname(__FILE__) + '/mongo-sweatshop/model'
 
 module MongoSweatShop
   extend ActiveSupport::Concern

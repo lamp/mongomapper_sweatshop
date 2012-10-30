@@ -23,7 +23,7 @@ module MongoSweatShop
       # @param overrides [Hash] hash of attributes to override what may be defined in the fixture
       # @return [Class] instance of the class this is currently included
       def gen name=:default, overrides={}  
-        self.create @@fixtures[name].call.merge(overrides)
+        self.create SweatShop[self, name, overrides]
       end
       alias :generate :gen
       
@@ -33,7 +33,7 @@ module MongoSweatShop
       # @param overrides [Hash] Hash of attributes to merge into the generated fixture
       # @return [Class] instance of the class 
       def make name=:default, overrides={}
-        self.new @@fixtures[name].merge(overrides)
+        self.new SweatShop[self, name, overrides]
       end
       
     end

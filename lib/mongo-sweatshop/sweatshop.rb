@@ -25,9 +25,11 @@ module MongoSweatShop
       # Gets a fixture
       # @param klass [Class] The class to scope the fixture query by
       # @param name [Symbol] the fixture name to scope the query by
+      # @param overrides [Hash] the overrides that may be provided
       # @return [Mixed] the results of the proc, or false
-      def [] klass, name=:default
-        @@models[klass][name].last.call
+      def [] klass, name=:default, overrides={}
+        overrides, name = name, :default if name.is_a? Hash
+        @@models[klass][name].last.call.merge(overrides)
       rescue NoFixtureError
         puts "A fixture with that name has been generated, we have used the default"
         @@models[klass][:default].last.call.merge(overrides)
