@@ -15,11 +15,9 @@ module MongoSweatShop
       # @param klass [Class] klass is the class to provide a fixture
       # @param name [Symbol] defines the scope of the fixture, defaults to :default
       # @param proc [Proc] the attribute list to lazily evaled
-      # @return [Mixed] The proc originally passed, false if there was an error
+      # @return [Proc] The proc originally passed
       def []= klass, name=:default, proc
         ((@@models[klass] ||= {})[name] ||= []) << proc
-      rescue
-        false
       end
       
       # Gets a fixture
@@ -31,7 +29,7 @@ module MongoSweatShop
         overrides, name = name, :default if name.is_a? Hash
         @@models[klass][name].last.call.merge(overrides)
       rescue NoFixtureError
-        puts "A fixture with that name has been generated, we have used the default"
+        puts "A fixture with that name has not been defined, using the default"
         @@models[klass][:default].last.call.merge(overrides)
       end
     end

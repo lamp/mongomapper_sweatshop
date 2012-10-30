@@ -9,4 +9,5 @@ group :development do
   gem 'simplecov'
   gem 'yard'
   gem 'redcarpet'
+  gem 'database_cleaner'
 end
