@@ -5,6 +5,7 @@ gem 'bson_ext'
 gem 'randexp'
 
 group :development do
+  gem 'jeweler'
   gem 'rspec'
   gem 'simplecov'
   gem 'yard'
