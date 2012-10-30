@@ -8,7 +8,7 @@ https://github.com/datamapper/dm-sweatshop/ shamelessly rewritten for mongo_mapp
 * mongo_mapper
 
 #### Installation: (Gemfile)
-    gem "mongo-sweatshop", require: 'mongo-sweatshop'
+    gem "mongomapper-sweatshop", require: 'mongomapper_sweatshop'
 
 ####Usage:
 

@@ -4,4 +4,4 @@ config
 doc
 .yardoc
 
-*.gem
+pkg/
