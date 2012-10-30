@@ -12,7 +12,6 @@ begin
     gem.authors = ['lamp']
     gem.email = 'matthew.gradidge@gmail.com'
     gem.homepage = 'http://github.com/lamp/mongomapper_sweatshop'
-    gem.has_rdoc = 'yard'
   end
   
   Jeweler::GemCutterTasks.new
