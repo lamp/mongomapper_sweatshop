@@ -3,15 +3,12 @@ MongoMapper Sweatshop, Extracted from @goalsforgiving
 
 https://github.com/datamapper/dm-sweatshop/ shamelessly rewritten for mongo_mapper 
 
-###Requirements
+####Requirements
 
 * mongo_mapper
 
-
-
 #### Installation: (Gemfile)
-    gem "mongo-sweatshop"
-
+    gem "mongo-sweatshop", require: 'mongo-sweatshop'
 
 ####Usage:
 
