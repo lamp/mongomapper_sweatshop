@@ -1,5 +1,5 @@
 # @author lamp
-module MongoSweatShop
+module MongoMapperSweatShop
   class SweatShop
     
     # the model to fixture map

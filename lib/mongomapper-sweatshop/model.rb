@@ -1,4 +1,4 @@
-module MongoSweatShop
+module MongoMapperSweatShop
   module Model
     
     module ClassMethods

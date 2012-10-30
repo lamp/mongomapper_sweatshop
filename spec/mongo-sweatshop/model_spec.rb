@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe MongoSweatShop::Model::ClassMethods do
+describe MongoMapperSweatShop::Model::ClassMethods do
   
   subject do
     class User
@@ -42,12 +42,12 @@ describe MongoSweatShop::Model::ClassMethods do
     end
     
     specify do
-      MongoSweatShop::SweatShop.should_receive(:[]=)
+      MongoMapperSweatShop::SweatShop.should_receive(:[]=)
       User.fix { attrs }
     end
     
     specify do
-      MongoSweatShop::SweatShop.should_receive(:[]=).with(User, :default, callable)
+      MongoMapperSweatShop::SweatShop.should_receive(:[]=).with(User, :default, callable)
       User.fix callable
     end
   end

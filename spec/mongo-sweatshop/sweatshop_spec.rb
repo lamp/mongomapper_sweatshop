@@ -1,5 +1,5 @@
 require 'spec_helper'
-describe MongoSweatShop::SweatShop do
+describe MongoMapperSweatShop::SweatShop do
   
   before :all do
     class User; end

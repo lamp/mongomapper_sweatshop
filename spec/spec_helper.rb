@@ -3,7 +3,7 @@ require 'randexp'
 require 'active_support'
 require 'simplecov'
 SimpleCov.start
-require 'mongo-sweatshop'
+require 'mongomapper_sweatshop'
 require 'database_cleaner'
 
 Randexp::Dictionary.load_dictionary

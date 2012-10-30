@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "mongomapper-sweatshop"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["lamp"]
@@ -19,16 +19,17 @@ Gem::Specification.new do |s|
     "Gemfile",
     "Gemfile.lock",
     "README.md",
+    "Rakefile",
     "VERSION",
-    "lib/mongo-sweatshop.rb",
-    "lib/mongo-sweatshop/model.rb",
-    "lib/mongo-sweatshop/sweatshop.rb",
+    "lib/mongomapper-sweatshop/model.rb",
+    "lib/mongomapper-sweatshop/sweatshop.rb",
+    "lib/mongomapper_sweatshop.rb",
     "mongomapper-sweatshop.gemspec",
     "spec/mongo-sweatshop/model_spec.rb",
     "spec/mongo-sweatshop/sweatshop_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = "http://github.com/lamp/mongomapper-sweatshop"
+  s.homepage = "http://github.com/lamp/mongomapper_sweatshop"
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
   s.summary = "MongoMapper plugin for generating fixtures"
