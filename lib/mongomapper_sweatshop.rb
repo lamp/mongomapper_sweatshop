@@ -6,4 +6,5 @@ module MongoMapperSweatShop
   
   include MongoMapperSweatShop::Model
 end
-MongoMapper::Document.plugin( MongoMapperSweatShop)
+MongoMapper::Document.plugin(MongoMapperSweatShop)
+MongoMapper::EmbeddedDocument.plugin(MongoMapperSweatShop)
