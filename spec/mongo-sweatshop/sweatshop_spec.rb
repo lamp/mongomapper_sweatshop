@@ -54,7 +54,7 @@ describe MongoMapperSweatShop::SweatShop do
       proc { { foo: 'bar' }}
     end
     
-    before :all do
+    before do
       subject[User, :default]= callable
     end
     

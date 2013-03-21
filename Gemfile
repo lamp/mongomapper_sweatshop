@@ -1,8 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'mongo_mapper'
+gem 'mongo_mapper', '~> 0.12.0'
 gem 'bson_ext'
 gem 'randexp'
+gem 'activesupport'
 
 group :development do
   gem 'jeweler'
